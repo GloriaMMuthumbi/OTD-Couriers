@@ -1,0 +1,212 @@
+@font-face {
+    font-family: "Rany";
+    src: url("fonts/Rany.otf");
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    height: 100%;
+    font-family: "Rany";
+    background: linear-gradient(#ffffff, #f3f3f3, #ffffff)
+}
+
+.nav-brand img{
+    height: 50px;
+    width: 50px;
+    margin-left: 50px;
+}
+
+.dropdown-toggle::after{
+    content: none;
+}
+
+.navbar{
+    z-index: 1010;
+    background: white;
+    opacity: 0.75;
+    -webkit-filter: blur(20pxpx);
+    -moz-filter: blur(20px);
+    filter: blur(20pxpx);
+    width: 100%;
+    position: sticky;
+    top: 0;
+}
+
+.dropdown-menu{
+    left: 50%;
+    right: auto;
+    transform: translate(-50%, 0);
+}
+
+.nav-item{
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+.btn-primary{
+    border-radius: 40px;
+    color: rgb(80, 200, 120);
+    background: transparent;
+    font-size: 13px;
+    font-weight: bold;
+    border: 2px solid rgb(42, 170,138);
+    margin-right: 50px;
+}
+
+.nav-link{
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.section{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    min-height: 100vh;
+    height: 100vh;
+}
+
+.hero-text{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+}
+
+h1{
+   color: rgb(80, 200, 120);
+}
+
+.hero-image{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+}
+
+.hero-text h1{
+    font-weight: bold;
+}
+
+.card{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 25px;
+    margin: 10px;
+    box-shadow: 0 6px 10px rgba(80, 200, 120, .08), 0 0 6px rgba(80, 200, 120, .05);
+        transition: .3s transform cubic-bezier(.155, 1.105, .295, 1.12), .3s box-shadow, .3s -webkit-tranform cubic-bezier(.155, 1.105, .295, 1.12);
+    cursor: pointer;
+}
+
+.card:hover{
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(80, 200, 120, .12), 0 4px 8px rgba(80, 200, 120, .06);
+}
+
+.card-title{
+    text-align: center;
+    font-size: 16px;
+}
+
+.card-img-top{
+    width: 175px;
+    height: 175px;
+}
+
+.scroll-down{
+    opacity: 1;
+    -webkit-transition: all .5s ease-in 3s;
+    transition: all .5s ease-in 3s;
+}
+
+.scroll-down{
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    margin-left: -16px;
+    display: block;
+    width: 32px;
+    height: 32px;
+    border: 2px solid rgb(42, 170,138);
+    background-size: 14px auto;
+    border-radius: 50%;
+    z-index: 2;
+    -webkit-animation: bounce 2s infinite 2s;
+    animation: bounce 2s infinite 2s;
+    -webkit-transition: all .2s ease-in;
+    transition: all .2s ease-in;
+    transform: scale(1);
+}
+
+.scroll-down:before{
+    position: absolute;
+    top: calc(50% - 8px);
+    left: calc(50% - 6px);
+    transform: rotate(-45deg);
+    display: block;
+    width: 12px;
+    height: 12px;
+    content: "";
+    border: 2px solid rgb(42, 170,138);
+    border-width: 0px 0 2px 2px;
+}
+
+@keyframes bounce {
+    0%,
+    100%,
+    20%,
+    50%,
+    80% {
+        -webkit-transform: translateY(0);
+        -ms-transform: translateY(0);
+        transform: translateY(0);
+    }
+    40% {
+        -webkit-transform: translateY(-10px);
+        -ms-transform: translateY(-10px);
+        transform: translateY(-10px);
+    }
+    60% {
+        -webkit-transform: translateY(-5px);
+        -ms-transform: translateY(-5px);
+        transform: translateY(-5px);
+    }
+}
+
+.order-text{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+}
+
+.order-image{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    width: 100px;
+    height: auto;
+}
+
+h2{
+    font-weight: bold;
+    color: rgb(80, 200, 120);;
+}
+
+.order-btn{
+    border-radius: 40px;
+    color: white;
+    background: rgb(80, 200, 120);
+    font-size: 13px;
+    font-weight: bold;
+    border: 2px solid rgb(80, 200, 120);
+    margin-left: 12px;
+    width: 150px;
+}
+
+.page-footer{
+    background: rgb(80, 200, 120);
+    border-radius: 5px 5px 0 0;
+    font-size: 13px;
+}
