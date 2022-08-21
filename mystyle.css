@@ -175,6 +175,27 @@ h1{
     }
 }
 
+.partners{
+    top: 0px;
+}
+
+.stores-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.stores-section .row{
+    padding-top: 30px;
+}
+
+.store-logo img{
+    width: 250px;
+    height: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
 .order-text{
     display: flex;
     flex-flow: column;
